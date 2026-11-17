@@ -1,4 +1,4 @@
-package com.ironhack.hellocrud.model;
+package com.ironhack.helloai.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,16 +8,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @Entity
-public class Monster {
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private String name;
+    private Long id;
 
-    public Monster(String name) {
-        this.name = name;
-    }
 }
